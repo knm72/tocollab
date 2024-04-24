@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let st = prompt("Enter the string : ");
+        let len = st.length;
+        let str = st.toUpperCase();
+        document.write("Length of string is :"+len+"</br");
+        document.write("String in Uppercase is :"+str);
+        let count=0;
+        for(i=0;i<len;i++)
+        {
+            if(str[i]=='A'||str[i]=='E'||str[i]=='I'||str[i]=='O'||str[i]=='U')
+            {
+                let vowel=str[i];
+                let index=i;
+                let count;
+                count++;
+            document.write("The left most vowel is :"+vowel+"</br");
+            document.write("Index of vowel is :"+index);
+            break;
+            }
+        }
+        if(count==0)
+        {
+            document.write("\n no vowels");
+        }
+    </script>
+</body>
+</html>
